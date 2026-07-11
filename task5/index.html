@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Registration</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding HTML Links & CSS</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#">Home</a> | 
+            <a href="#">About Us</a> | 
+            <a href="#">Privacy Policy</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Understanding HTML Links</h1>
 
-  <h1>User Registration</h1>
+        <p >
+            Hyperlinks are the backbone of the web. They allow users to navigate between pages seamlessly. Below, we explore the two main types of links: 
+            <span>Absolute</span> and 
+            <strong>Relative</strong>.
+        </p>
 
-  <h2>Personal Details</h2>
-  <form>
-    <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname"><br>
+        <h2>1. Absolute Linking</h2>
 
-    <label for="lname">Last Name:</label>
-    <input type="text" id="lname" name="lname"><br>
+        <p>Absolute links point to a specific, full URL on the internet. They must include the protocol (like https://) and the domain name. These are typically used to link to external websites.</p>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age"><br>
+        <p><strong>Example:</strong> Learn more about web development by visiting the <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank">Wikipedia page for HTTP</a>.</p>
+        
+        <h2>2. Relative Linking</h2>
 
-    <label for="gender">Gender:</label>
-    <select id="gender" name="gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select><br>
+        <p>
+            Relative links point to a file relative to the current file's location on the same server. They do not include the protocol or domain name. These are ideal for linking pages within your own website because if you change your domain name, the links won't break.
+        </p>
 
-    <label for="profile">Profile Picture:</label>
-    <input type="file" id="profile" name="profile">
-  </form>
-
-  <h2>Account Details</h2>
-  <form>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password"><br>
-
-    <label>Role:</label>
-    <input type="radio" id="admin" name="role" value="admin">
-    <label for="admin">Admin</label>
-    <input type="radio" id="user" name="role" value="user">
-    <label for="user">User</label><br>
-
-    <input type="checkbox" id="terms" name="terms">
-    <label for="terms">I agree to the terms and conditions</label><br>
-
-    <button type="submit">Register</button>
-    <button type="reset">Reset</button>
-  </form>
-
+        <div>
+            <strong>Examples:</strong>
+            <ul>
+                <li> Read our <a href="#">About Us</a> page to meet the team.</li>
+                <li> Check out our <a href="#">Privacy Policy</a> to see how we handle data.</li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>
