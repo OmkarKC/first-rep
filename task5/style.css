@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.intro {
+  background-color: #f8d7da;
+  padding: 10px;
+}
+
+.absolute {
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 10px;
+}
+
+.relative {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 10px;
+}
